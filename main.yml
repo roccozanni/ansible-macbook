@@ -25,6 +25,16 @@
       - skype
       - sublime-text
       - google-chrome
+      - slack
+      - macdown
+      - 1password
+      - caffeine
+      - hex-fiend
+      - hockey
+      - iterm2
+      - transmission
+      - vlc
+      - docker
     gem_packages:
       - fastlane
       - cocoapods
