@@ -1,0 +1,38 @@
+---
+- hosts: localhost
+  vars:
+    homebrew_tap_repositories:
+      - homebrew/core
+      - caskroom/cask
+    homebrew_packages:
+      - gnu-sed
+      - ruby
+      - awscli
+      - pstree
+      - zsh
+      - zsh-completions
+      - git
+      - wget
+      - watch
+      - lastpass-cli
+      - phraseapp
+      - kops
+      - kubernetes-cli
+      - packer
+    homebrew_cask_packages:
+      - firefox
+      - spotify
+      - skype
+      - sublime-text
+      - google-chrome
+    gem_packages:
+      - fastlane
+      - cocoapods
+  environment:
+    PATH: /usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+  roles:
+    - common
+    - elliotweiser.osx-command-line-tools
+    - homebrew
+    - npm
+    - gem
